@@ -1,9 +1,9 @@
+  
 /*  Justin Yee
  *  COSC 311  FA19
  *  hw0926a
  *  URL:  <https://github.com/j9y/COSC-311>
  */
-package hw0926;
 import java.util.*;
 public class Palindrome {
 	public static boolean isPalindrome(String arr[]) {
@@ -22,43 +22,16 @@ public class Palindrome {
 		 }
 		return true;
 	}
-	public static void main(String args[]) {
-		Scanner arrLength = new Scanner(System.in);
-		Scanner input = new Scanner(System.in);
-		System.out.print("Please enter the array length: ");
-		int length = arrLength.nextInt();
-		String arr[] = new String[length];
-		for(int i = 0; i < length; i++) {
-		System.out.print("Please enter string for position "+i+" of the array: ");
-		arr[i]= input.nextLine();
-		}
-		boolean result = isPalindrome(arr);
-		System.out.println(result);
+	public static void main(String[] args) {
+		System.out.println(isPalindrome(args));
 	}
 }
-/**
-Please enter the array length: 4
-Please enter string for position 0 of the array: a
-Please enter string for position 1 of the array: b
-Please enter string for position 2 of the array: c
-Please enter string for position 3 of the array: d
+/*
+cs-503-1-5:bin jyee1$ java Palindrome a b c d
 false
-
-Please enter the array length: 4
-Please enter string for position 0 of the array: a
-Please enter string for position 1 of the array: boy
-Please enter string for position 2 of the array: boy
-Please enter string for position 3 of the array: a
+cs-503-1-5:bin jyee1$ java Palindrome a boy boy a 
 true
-
-Please enter the array length: 5
-Please enter string for position 0 of the array: a
-Please enter string for position 1 of the array: b
-Please enter string for position 2 of the array: caliph
-Please enter string for position 3 of the array: b
-Please enter string for position 4 of the array: a
+cs-503-1-5:bin jyee1$ java Palindrome a b caliph b a
 true
- */
-
-
-	
+cs-503-1-5:bin jyee1$ 
+*/
