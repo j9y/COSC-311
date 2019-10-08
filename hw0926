@@ -36,5 +36,29 @@ public class Palindrome {
 		System.out.println(result);
 	}
 }
+/**
+Please enter the array length: 4
+Please enter string for position 0 of the array: a
+Please enter string for position 1 of the array: b
+Please enter string for position 2 of the array: c
+Please enter string for position 3 of the array: d
+false
+
+Please enter the array length: 4
+Please enter string for position 0 of the array: a
+Please enter string for position 1 of the array: boy
+Please enter string for position 2 of the array: boy
+Please enter string for position 3 of the array: a
+true
+
+Please enter the array length: 5
+Please enter string for position 0 of the array: a
+Please enter string for position 1 of the array: b
+Please enter string for position 2 of the array: caliph
+Please enter string for position 3 of the array: b
+Please enter string for position 4 of the array: a
+true
+ */
+
 
 	
